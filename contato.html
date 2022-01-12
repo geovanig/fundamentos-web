@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <ul>
+    <ul class="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -17,25 +18,55 @@
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="titulo">Entre em contato comigo</h1>
 
-    <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome">
-        
-        <label for="email">Email</label>
-        <input type="email" id="email">
+    <div class="container">
 
-        <label for="assunto">Assunto</label>
-        <textarea name="assunto" id="assunto" cols="64" rows="4"></textarea>
-        <button>Enviar</button>
-    </form>
+        <div class="margem">
+            <h2 class="titulo">Mande uma mensagem</h2>
+            <form class="fonte">
+                
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto</label>
+                <br>
+                <textarea name="assunto" id="assunto" cols="64" rows="4"></textarea>
+                <br>
+                <button>Enviar</button>
+            </form>        
+        </div>
 
-    <h2>Se quiser me convidar pra jantar...</h2>
+        <div class="margem">
+            <h2 class="titulo">Se quiser me convidar pra jantar...</h2>
+            <p class="fonte">Flying Sushi</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58503.43284469936!2d-46.77138172089842!3d-23.587666799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5688cf9904c7%3A0xa28201eb91d7a61a!2sFlying%20Sushi%20-%20Butant%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1641856871016!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 
-    <p>Flying Sushi</p>
+    </div>
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58503.43284469936!2d-46.77138172089842!3d-23.587666799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5688cf9904c7%3A0xa28201eb91d7a61a!2sFlying%20Sushi%20-%20Butant%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1641856871016!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <footer class="paragrafo">
+        <hr>
+        <div>
+            <a href="https://www.linkedin.com/in/geovanigleidson" target="_blank">
+                <img class="contatoIcon" src="assets/img/linkedin.png" alt="">
+            </a>
+    
+            <a href="https://github.com/geovanig"  target="_blank">
+                <img class="contatoIcon" src="assets/img/github.png" alt="">
+            </a>
+            
+            
+        </div>
+        Geovani Gleidson &copy;
+    </footer>
 
 </body>
 </html>

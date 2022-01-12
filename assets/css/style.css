@@ -1,0 +1,57 @@
+body{
+    background: rgb(4,38,22);
+    background: linear-gradient(90deg, rgba(4,38,22,1) 0%, rgba(32,26,36,1) 52%, rgba(41,26,50,1) 100%);
+}
+
+.paragrafo{
+    color: rgb(156, 214, 210);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.titulo{
+    color: rgb(59, 253, 188);
+    text-align: center; 
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    display: inline;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: rgb(211, 167, 253);
+}
+
+.menu li a:hover{
+    color: rgb(151, 255, 156);
+}
+
+.margem{
+    padding: 2rem;
+}
+
+.contatoIcon{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 1rem;
+}
+
+.margemB{
+    margin-bottom: 2rem;
+}
+
+.fonte{
+    color: rgb(197, 134, 255);
+    font-size:  1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
