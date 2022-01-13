@@ -28,26 +28,27 @@
                 
                 <label for="nome">Nome</label>
                 <br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <br>
                 <label for="email">Email</label>
                 <br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <br>
                 <label for="assunto">Assunto</label>
                 <br>
-                <textarea name="assunto" id="assunto" cols="64" rows="4"></textarea>
+                <textarea name="assunto" id="assunto" cols="64" rows="4" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
-                <button>Enviar</button>
+                <button onclick="validarEnvio()">Enviar</button>
             </form>        
         </div>
 
         <div class="margem">
             <h2 class="titulo">Se quiser me convidar pra jantar...</h2>
             <p class="fonte">Flying Sushi</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58503.43284469936!2d-46.77138172089842!3d-23.587666799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5688cf9904c7%3A0xa28201eb91d7a61a!2sFlying%20Sushi%20-%20Butant%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1641856871016!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58503.43284469936!2d-46.77138172089842!3d-23.587666799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5688cf9904c7%3A0xa28201eb91d7a61a!2sFlying%20Sushi%20-%20Butant%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1641856871016!5m2!1spt-BR!2sbr" width="350" height="225" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="zoomMapa()" onmouseout="normalMapa()" id="tamanhoMapa"></iframe>
         </div>
 
     </div>
@@ -67,6 +68,8 @@
         </div>
         Geovani Gleidson &copy;
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
